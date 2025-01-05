@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header{
+    display: flex;
+    padding:0px;
+    justify-content: space-between;
+   
+}
+.section img{
+    height: 50px;
+    width:50px;
+    
+    margin-left: 400px;
+}
+.navbar {
+            background-color:rgba(20, 20, 17, 0.623);
+            padding: 20px 40px; 
+            position: sticky; 
+            top: 0px;
+            
+            z-index: 1000;
+            
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex; 
+    justify-content: flex-end;
+    margin: 0; 
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.navbar ul li {
+    margin-left: 30px; 
+}
+.navbar ul li a {
+    color: #9db4d5; 
+    text-decoration: none; 
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar ul li a:hover {
+    color: #f1f1f1; 
+}
+img{
+    height: 250px;
+    width: 250px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+.profile{
+    background-color: #babfcb;
+    
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    margin-top: 150px;
+    margin-left: 150px;
+    color:rgba(0, 0, 0, 0.993) ;
+}
+h1{
+    margin-left:150px;
+}
+h2{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-left:170px ;
+}
+p{
+    margin-right:10px;
+    text-align: left;
+    font-size: 18px;
+}
+.line {
+    border: 1px;
+    border-top: 2px solid #000000;
+    margin-right:50px;}
+    .contact {
+    display: flex; 
+    flex-direction: row;
+    gap: 150px; 
+    
+}
+.contact a img {
+    height: 50px; 
+    width: 50px;
+    cursor: pointer;
+    margin-left:-500px;
+    margin-top : 450px; 
+}
+.skill-container{
+    text-align: center;
+    padding: 20px;
+    background-color: #958e8e;
+
+    
+}
+.skills-grid{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 20px;
+}
+.skill-item{
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.skill-item img{
+    width: 100px;
+    height:100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: #000000;
+    
+}
+.project{
+    background-color:  #eacece;
+    align-items: center;
+    justify-content: center;
+    
+}
+.project h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #050303;
+  margin-left: 600px;
+  
+}
+
+
+.card1, .card2, .card3{
+  display: inline-block;
+  background: #a69f9f;
+  border: 1px solid #050404;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 10px;
+  margin-left: 80px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 80px rgba(243, 225, 225, 0.589); 
+}
+
+.card1 img, .card2 img, .card3 img  {
+  width: 200px;
+  height:200px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.card1 p, .card2 p, .card3 p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 1rem 0;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(81, 78, 78, 0.2);
+}
+
+
+
+.mybutton {
+  background-color: #00c3ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mybutton:hover {
+  background-color: #009ec3;
+}
+.info{
+    background-color: #f0eac6;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px;
+}
+.container{
+    background: #dfd6d6;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+    padding: 80px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 0 0 80px rgba(243, 243, 243, 0.589); 
+            
+}
+.container h1{
+    margin-left:40px;
+    font-size: 1.8em;
+}
+.container form{
+    font-size: 1.2rem;
+    background-color: #a5b9ce;
+    
+    flex-direction: column;
+    gap: 15px;
+}
+.container button{
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+</style>
+<body>
+    <nav class="navbar">
+           
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+    <div class="profile">
+        <div class="img1">
+            <img src="profile.jpeg" alt="sonal">
+        </div>
+        <div class="content">
+            <h1>Shruti bhosale</h1>
+            <h2>Web Developer</h2>
+            <p>I am a passionate web developer with a strong interest in web development, cloud computing, and UI/UX design. I enjoy creating elegant and efficient websites and applications that prioritize performance and exceptional user experiences. My focus is on building responsive, user-friendly solutions that combine innovative design with robust functionality.</p>
+            <hr class="line">
+            <a href="Shruti laxman bhosale (1).pdf" class="button">Download My CV</a>
+        </div>
+        
+        </div>
+    </div>
+    <hr class="line">
+    <div class="skill-container">
+        <h1 style="font-size: 30px; color:black; margin-left: 50px;">Skills</h1>
+        <div class="skills">
+            <div class="skills-grid">
+                    <div class="skill-item"><img src="html.png" alt="HTML"></div>
+                    <div class="skill-item"><img src="css.png" alt="CSS"></div>
+                    <div class="skill-item"><img src="js.png" alt="JavaScript"></div>
+                    <div class="skill-item"><img src="bootstrap.jpg" alt="Bootstrap"></div>
+                    <div class="skill-item"><img src="java.png" alt="Java"></div>
+                    <div class="skill-item"><img src="python.png" alt="Python"></div>
+                    <div class="skill-item"><img src="linkedin.png" alt="Database"></div>
+                    <div class="skill-item"><img src="git.png" alt="GitHub"></div>
+                    <div class="skill-item"><img src="net.jpg" alt="C"></div>
+                    <div class="skill-item"><img src="react.png" alt="C++"></div>
+                    <div class="skill-item"><img src="wordpress.png" alt="React"></div>
+                    <div class="skill-item"><img src="angular.png" alt="Angular"></div>
+            </div>
+                
+        </div>
+    </div>
+    <hr class="line">
+    <div class="project">
+        <h1 >Projects</h1>
+        <div class="card1">
+            <img src="project.jpg" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button onclick="window.location.href='https://github.com/Shrutibhosale31/Sms-Spam-Detector.git'" class="mybutton">View Poject</button>
+
+        </div>
+        <div class="card2">
+            <img src="project.jpg" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button onclick="window.location.href='https://shrutibhosale31.github.io/project/'" class="mybutton">View Poject</button>
+
+        </div>
+        <div class="card3">
+            <img src="project.jpg" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button onclick="window.location.href='https://shrutibhosale31.github.io/profile-card/'" class="mybutton">View Poject</button>
+
+        </div>
+
+    </div>
+    <hr class="line">
+    <div class="info">
+        <div class="container"><h1>Contact Me</h1>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="16e77a9a-d6b4-4dea-979d-c328ec4b59d1">
+                    <label for fname>  Name : </label><br>
+                    <input type="text" name="fname" required placeholder="Your Name" size="40"> <br><br>
+                    <label for lname> Email : </label><br>
+                    <input type="email"  name="email"placeholder="Email" size="40"> <br><br>
+                    <label for tname> Message :</label><br>
+                    <input type="text" name="message" placeholder="Message" size="40"><br><br>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button>submit</button>
+            </form></div>
+    </div>
+    
+</body>
+</html>
